@@ -16,9 +16,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
     //Location Manager Setup
     [self locationManagerSetup];
+    
+    
+    //Motion Manager Setup
+    [self motionManagerSetup];
     
     //Monitoring Region, default is delta lab
     [self monitoringRegionwithLatitude:42.056929 Longitude:-87.676519 Radius:100 Name:@"Delta Lab"];
@@ -37,6 +40,24 @@
     [self drawRoute];
 }
 
+- (void)motionManagerSetup {
+    self.motionManager = [[CMMotionActivityManager alloc] init];
+    if([CMMotionActivityManager isActivityAvailable]) {
+        [self.motionManager startActivityUpdatesToQueue:[[NSOperationQueue alloc]init] withHandler:^(CMMotionActivity *activity) {
+            dispatch_async(dispatch_get_main_queue(), ^{
+                if (activity.walking) {
+                    NSLog(@"Walking");
+                    [self triggerLocalNotification];
+                } else if (activity.running) {
+                    NSLog(@"running");
+                } else if (activity.automotive) {
+                    NSLog(@"driving");
+                }
+            });
+        }];
+    }
+}
+
 #pragma mark LocationManager Methods
 
 - (void)locationManagerSetup {
@@ -52,7 +73,9 @@
     }
     
     self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    self.locationManager.distanceFilter = 1;
     [self.locationManager startUpdatingLocation];
+    [self.locationManager startUpdatingHeading];
 }
 
 - (void)monitoringRegionwithLatitude: (float) latitude
@@ -73,6 +96,11 @@
     NSLog(@"Welcome to %@", region.identifier);
     [self triggerLocalNotification];
 }
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+
+}
+
 
 #pragma mark MapView Methods
 
@@ -151,7 +179,7 @@
             NSLog(@"Total steps: %d", [steps count]);
             [steps enumerateObjectsUsingBlock:^(id obj, NSUInteger idx, BOOL *stop) {
                 NSLog(@"Route instruction : %@", [obj instructions]);
-                NSLog(@"Route Distance: %f", [obj distance]);
+//                NSLog(@"Route Distance: %f", [obj distance]);
             }];
         }];
     }];

@@ -16,6 +16,7 @@
 		595462111A6F5C9F00944967 /* PhysicalCrowdsourcingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 595462101A6F5C9F00944967 /* PhysicalCrowdsourcingTests.m */; };
 		5954621B1A6F5FD900944967 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5954621A1A6F5FD900944967 /* CoreLocation.framework */; };
 		5954621D1A6F5FE700944967 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5954621C1A6F5FE700944967 /* MapKit.framework */; };
+		595462251A6FAC4F00944967 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 595462241A6FAC4F00944967 /* CoreMotion.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		595462101A6F5C9F00944967 /* PhysicalCrowdsourcingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhysicalCrowdsourcingTests.m; sourceTree = "<group>"; };
 		5954621A1A6F5FD900944967 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		5954621C1A6F5FE700944967 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		595462241A6FAC4F00944967 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				595462251A6FAC4F00944967 /* CoreMotion.framework in Frameworks */,
 				5954621D1A6F5FE700944967 /* MapKit.framework in Frameworks */,
 				5954621B1A6F5FD900944967 /* CoreLocation.framework in Frameworks */,
 			);
@@ -69,6 +72,7 @@
 		595461E81A6F5C9F00944967 = {
 			isa = PBXGroup;
 			children = (
+				595462241A6FAC4F00944967 /* CoreMotion.framework */,
 				5954621C1A6F5FE700944967 /* MapKit.framework */,
 				5954621A1A6F5FD900944967 /* CoreLocation.framework */,
 				595461F31A6F5C9F00944967 /* PhysicalCrowdsourcing */,
