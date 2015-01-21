@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		595461F71A6F5C9F00944967 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 595461F61A6F5C9F00944967 /* main.m */; };
+		595461FA1A6F5C9F00944967 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 595461F91A6F5C9F00944967 /* AppDelegate.m */; };
+		595461FD1A6F5C9F00944967 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 595461FC1A6F5C9F00944967 /* ViewController.m */; };
+		595462001A6F5C9F00944967 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 595461FE1A6F5C9F00944967 /* Main.storyboard */; };
+		595462021A6F5C9F00944967 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 595462011A6F5C9F00944967 /* Images.xcassets */; };
+		595462051A6F5C9F00944967 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 595462031A6F5C9F00944967 /* LaunchScreen.xib */; };
+		595462111A6F5C9F00944967 /* PhysicalCrowdsourcingTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 595462101A6F5C9F00944967 /* PhysicalCrowdsourcingTests.m */; };
+		5954621B1A6F5FD900944967 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5954621A1A6F5FD900944967 /* CoreLocation.framework */; };
+		5954621D1A6F5FE700944967 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5954621C1A6F5FE700944967 /* MapKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5954620B1A6F5C9F00944967 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 595461E91A6F5C9F00944967 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 595461F01A6F5C9F00944967;
+			remoteInfo = PhysicalCrowdsourcing;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		595461F11A6F5C9F00944967 /* PhysicalCrowdsourcing.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhysicalCrowdsourcing.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		595461F51A6F5C9F00944967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		595461F61A6F5C9F00944967 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		595461F81A6F5C9F00944967 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		595461F91A6F5C9F00944967 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		595461FB1A6F5C9F00944967 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		595461FC1A6F5C9F00944967 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		595461FF1A6F5C9F00944967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		595462011A6F5C9F00944967 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		595462041A6F5C9F00944967 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5954620A1A6F5C9F00944967 /* PhysicalCrowdsourcingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhysicalCrowdsourcingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5954620F1A6F5C9F00944967 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		595462101A6F5C9F00944967 /* PhysicalCrowdsourcingTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhysicalCrowdsourcingTests.m; sourceTree = "<group>"; };
+		5954621A1A6F5FD900944967 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		5954621C1A6F5FE700944967 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		595461EE1A6F5C9F00944967 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5954621D1A6F5FE700944967 /* MapKit.framework in Frameworks */,
+				5954621B1A6F5FD900944967 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		595462071A6F5C9F00944967 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		595461E81A6F5C9F00944967 = {
+			isa = PBXGroup;
+			children = (
+				5954621C1A6F5FE700944967 /* MapKit.framework */,
+				5954621A1A6F5FD900944967 /* CoreLocation.framework */,
+				595461F31A6F5C9F00944967 /* PhysicalCrowdsourcing */,
+				5954620D1A6F5C9F00944967 /* PhysicalCrowdsourcingTests */,
+				595461F21A6F5C9F00944967 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		595461F21A6F5C9F00944967 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				595461F11A6F5C9F00944967 /* PhysicalCrowdsourcing.app */,
+				5954620A1A6F5C9F00944967 /* PhysicalCrowdsourcingTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		595461F31A6F5C9F00944967 /* PhysicalCrowdsourcing */ = {
+			isa = PBXGroup;
+			children = (
+				595461F81A6F5C9F00944967 /* AppDelegate.h */,
+				595461F91A6F5C9F00944967 /* AppDelegate.m */,
+				595461FB1A6F5C9F00944967 /* ViewController.h */,
+				595461FC1A6F5C9F00944967 /* ViewController.m */,
+				595461FE1A6F5C9F00944967 /* Main.storyboard */,
+				595462011A6F5C9F00944967 /* Images.xcassets */,
+				595462031A6F5C9F00944967 /* LaunchScreen.xib */,
+				595461F41A6F5C9F00944967 /* Supporting Files */,
+			);
+			path = PhysicalCrowdsourcing;
+			sourceTree = "<group>";
+		};
+		595461F41A6F5C9F00944967 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				595461F51A6F5C9F00944967 /* Info.plist */,
+				595461F61A6F5C9F00944967 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5954620D1A6F5C9F00944967 /* PhysicalCrowdsourcingTests */ = {
+			isa = PBXGroup;
+			children = (
+				595462101A6F5C9F00944967 /* PhysicalCrowdsourcingTests.m */,
+				5954620E1A6F5C9F00944967 /* Supporting Files */,
+			);
+			path = PhysicalCrowdsourcingTests;
+			sourceTree = "<group>";
+		};
+		5954620E1A6F5C9F00944967 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5954620F1A6F5C9F00944967 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		595461F01A6F5C9F00944967 /* PhysicalCrowdsourcing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 595462141A6F5C9F00944967 /* Build configuration list for PBXNativeTarget "PhysicalCrowdsourcing" */;
+			buildPhases = (
+				595461ED1A6F5C9F00944967 /* Sources */,
+				595461EE1A6F5C9F00944967 /* Frameworks */,
+				595461EF1A6F5C9F00944967 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhysicalCrowdsourcing;
+			productName = PhysicalCrowdsourcing;
+			productReference = 595461F11A6F5C9F00944967 /* PhysicalCrowdsourcing.app */;
+			productType = "com.apple.product-type.application";
+		};
+		595462091A6F5C9F00944967 /* PhysicalCrowdsourcingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 595462171A6F5C9F00944967 /* Build configuration list for PBXNativeTarget "PhysicalCrowdsourcingTests" */;
+			buildPhases = (
+				595462061A6F5C9F00944967 /* Sources */,
+				595462071A6F5C9F00944967 /* Frameworks */,
+				595462081A6F5C9F00944967 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5954620C1A6F5C9F00944967 /* PBXTargetDependency */,
+			);
+			name = PhysicalCrowdsourcingTests;
+			productName = PhysicalCrowdsourcingTests;
+			productReference = 5954620A1A6F5C9F00944967 /* PhysicalCrowdsourcingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		595461E91A6F5C9F00944967 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = Delta;
+				TargetAttributes = {
+					595461F01A6F5C9F00944967 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					595462091A6F5C9F00944967 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 595461F01A6F5C9F00944967;
+					};
+				};
+			};
+			buildConfigurationList = 595461EC1A6F5C9F00944967 /* Build configuration list for PBXProject "PhysicalCrowdsourcing" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 595461E81A6F5C9F00944967;
+			productRefGroup = 595461F21A6F5C9F00944967 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				595461F01A6F5C9F00944967 /* PhysicalCrowdsourcing */,
+				595462091A6F5C9F00944967 /* PhysicalCrowdsourcingTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		595461EF1A6F5C9F00944967 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				595462001A6F5C9F00944967 /* Main.storyboard in Resources */,
+				595462051A6F5C9F00944967 /* LaunchScreen.xib in Resources */,
+				595462021A6F5C9F00944967 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		595462081A6F5C9F00944967 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		595461ED1A6F5C9F00944967 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				595461FD1A6F5C9F00944967 /* ViewController.m in Sources */,
+				595461FA1A6F5C9F00944967 /* AppDelegate.m in Sources */,
+				595461F71A6F5C9F00944967 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		595462061A6F5C9F00944967 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				595462111A6F5C9F00944967 /* PhysicalCrowdsourcingTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5954620C1A6F5C9F00944967 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 595461F01A6F5C9F00944967 /* PhysicalCrowdsourcing */;
+			targetProxy = 5954620B1A6F5C9F00944967 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		595461FE1A6F5C9F00944967 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				595461FF1A6F5C9F00944967 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		595462031A6F5C9F00944967 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				595462041A6F5C9F00944967 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		595462121A6F5C9F00944967 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		595462131A6F5C9F00944967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		595462151A6F5C9F00944967 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PhysicalCrowdsourcing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		595462161A6F5C9F00944967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PhysicalCrowdsourcing/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		595462181A6F5C9F00944967 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhysicalCrowdsourcingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhysicalCrowdsourcing.app/PhysicalCrowdsourcing";
+			};
+			name = Debug;
+		};
+		595462191A6F5C9F00944967 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = PhysicalCrowdsourcingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhysicalCrowdsourcing.app/PhysicalCrowdsourcing";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		595461EC1A6F5C9F00944967 /* Build configuration list for PBXProject "PhysicalCrowdsourcing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				595462121A6F5C9F00944967 /* Debug */,
+				595462131A6F5C9F00944967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		595462141A6F5C9F00944967 /* Build configuration list for PBXNativeTarget "PhysicalCrowdsourcing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				595462151A6F5C9F00944967 /* Debug */,
+				595462161A6F5C9F00944967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		595462171A6F5C9F00944967 /* Build configuration list for PBXNativeTarget "PhysicalCrowdsourcingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				595462181A6F5C9F00944967 /* Debug */,
+				595462191A6F5C9F00944967 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 595461E91A6F5C9F00944967 /* Project object */;
+}
