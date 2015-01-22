@@ -74,6 +74,10 @@
     [self triggerLocalNotification];
 }
 
+- (void)locationManager:(CLLocationManager *)manager didExitRegion:(CLRegion *)region {
+    NSLog(@"Good bye to %@", region.identifier);
+}
+
 #pragma mark MapView Methods
 
 - (void)mapViewSetup {
@@ -85,12 +89,12 @@
 //Set region for map view
 - (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation {
     MKCoordinateRegion mapRegion;
-    mapRegion.center = mapView.userLocation.coordinate;
+    mapRegion.center = self.departurePin.coordinate;
     
     //one degree of latitude is always approximately 111 kilometers (69 miles).
     //one degree of longitude spans a distance of approximately 111 kilometers (69 miles) at the equator but shrinks to 0 kilometers at the poles.
-    mapRegion.span.latitudeDelta = 0.2;
-    mapRegion.span.longitudeDelta = 0.2;
+    mapRegion.span.latitudeDelta = 0.05;
+    mapRegion.span.longitudeDelta = 0.05;
     [self.mapView setRegion:mapRegion animated: YES];
 }
 
